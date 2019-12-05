@@ -21,9 +21,11 @@ class DrumPadActivity : AppCompatActivity() {
         var mp5 = MediaPlayer.create(this, R.raw.ride)
         var mp6 = MediaPlayer.create(this, R.raw.heavysnare)
         var mp7 = MediaPlayer.create(this, R.raw.singlesnare)
-        
-
-
+        var mp8 = MediaPlayer.create(this, R.raw.conga1)
+        var mp9 = MediaPlayer.create(this, R.raw.cowbell)
+        var mp10 = MediaPlayer.create(this, R.raw.crashcym)
+        var mp11 = MediaPlayer.create(this, R.raw.hiconga)
+        var mp12 = MediaPlayer.create(this, R.raw.openhh)
 
         activityBtn.setOnClickListener {
             startActivity((Intent(this, MainActivity::class.java)))
