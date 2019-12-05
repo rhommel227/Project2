@@ -1,6 +1,7 @@
 package com.example.project2
 
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -13,11 +14,20 @@ class DrumPadActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drum_pad)
 
+        var mp1 = MediaPlayer.create(this, R.raw.snare)
+        var mp2 = MediaPlayer.create(this, R.raw.tom)
+        var mp3 = MediaPlayer.create(this, R.raw.hardkick)
+        var mp4 = MediaPlayer.create(this, R.raw.openhat)
+        var mp5 = MediaPlayer.create(this, R.raw.ride)
+        var mp6 = MediaPlayer.create(this, R.raw.heavysnare)
+        var mp7 = MediaPlayer.create(this, R.raw.singlesnare)
+        
+
+
+
         activityBtn.setOnClickListener {
             startActivity((Intent(this, MainActivity::class.java)))
         }
-
-
 
     }
 
