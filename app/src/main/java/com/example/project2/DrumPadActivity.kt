@@ -27,6 +27,54 @@ class DrumPadActivity : AppCompatActivity() {
         var mp11 = MediaPlayer.create(this, R.raw.hiconga)
         var mp12 = MediaPlayer.create(this, R.raw.openhh)
 
+        sound1.setOnClickListener{
+            mp1.start()
+        }
+
+        sound2.setOnClickListener{
+            mp2.start()
+        }
+
+        sound3.setOnClickListener{
+            mp3.start()
+        }
+
+        sound4.setOnClickListener{
+            mp4.start()
+        }
+
+        sound5.setOnClickListener{
+            mp5.start()
+        }
+
+        sound6.setOnClickListener{
+            mp6.start()
+        }
+
+        sound7.setOnClickListener{
+            mp7.start()
+        }
+
+        sound8.setOnClickListener{
+            mp8.start()
+        }
+
+        sound9.setOnClickListener{
+            mp9.start()
+        }
+
+        sound10.setOnClickListener{
+            mp10.start()
+        }
+
+        sound11.setOnClickListener{
+            mp11.start()
+        }
+
+        sound12.setOnClickListener{
+            mp12.start()
+        }
+
         activityBtn.setOnClickListener {
             startActivity((Intent(this, MainActivity::class.java)))
         }
